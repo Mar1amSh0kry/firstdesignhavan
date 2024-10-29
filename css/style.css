@@ -85,9 +85,12 @@ button {
 /* Start Navbar  */
 
 
-.navbar .container .right-side .icons {
+.navbar .container .right-side .icons,
+.navbar .container .right-side .menu {
     margin: 15px;
 }
+
+
 
 .navbar .container i {
     padding: 5px;
@@ -109,32 +112,6 @@ button {
     display: flex;
 }
 
-.navbar .container .right-side .menu {
-
-    padding: 10px;
-    margin: 10px;
-    position: relative;
-}
-
-navbar .container .right-side .menu .button {
-    display: flex;
-
-}
-
-.navbar .container .menu .links-menu span {
-    width: 15px;
-    background-color: #333;
-    margin: 2px;
-    height: 1.6px;
-    padding: 0.2px;
-}
-
-
-.navbar .container .menu .links-menu {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-}
 
 /* 
 .navbar .container .right-side .menu button:hover ul {
@@ -218,7 +195,7 @@ navbar .container .right-side .menu .button {
 }
 
 .heading .container .section1 .headtwo {
-    top: 165px;
+    top: 150px;
     right: 240px;
 }
 
