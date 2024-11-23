@@ -509,7 +509,7 @@ hr {
     margin: auto;
 }
 
-.contact .container img {
+.container .btn {
     width: 150px;
     margin: auto;
 }
@@ -544,6 +544,7 @@ hr {
 .instagram-photos {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .instagram-photos img {
@@ -582,7 +583,11 @@ hr {
     justify-content: space-between;
     font-family: "Inter", serif;
     text-transform: uppercase;
+    margin-top: 50px;
+}
 
+.footer .btn {
+    width: 120px;
 }
 
 .footer .container .information .section-part .title div:first-child {
@@ -614,10 +619,6 @@ hr {
     color: #FFFFFF;
 }
 
-.footer .container .information button {
-    width: fit-content;
-    height: fit-content;
-}
 
 .footer .container hr {
     color: #D2D0C3;
