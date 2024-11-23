@@ -271,9 +271,27 @@ button {
 
 @media(max-width:767px) {
     .explore img {
-        left: 75px;
-        top: 260px;
+        left: 45px;
+        top: 235px;
     }
+
+    .explore .container .content div:nth-child(3) {
+        white-space: normal;
+        font-size: 10px;
+        width: 330px;
+    }
+
+    .explore .content div {
+        font-size: 30px;
+        width: 310px;
+    }
+
+
+    .explore button {
+        margin: auto;
+
+    }
+
 }
 
 /*End Explore*/
