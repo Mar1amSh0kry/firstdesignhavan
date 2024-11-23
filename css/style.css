@@ -231,6 +231,7 @@ button {
 
 
 .explore .container .content div:nth-child(4) {
+    position: relative;
     z-index: 1;
 }
 
@@ -258,8 +259,8 @@ button {
     position: absolute;
     content: "";
     z-index: 0;
-    top: 240px;
-    left: 550px;
+    top: 290px;
+    left: 421px;
 }
 
 .explore button {
