@@ -150,6 +150,7 @@ button {
 @media (max-width:767px) {
     .heading .container .section1 {
         flex-direction: column;
+        align-items: center;
     }
 
 
