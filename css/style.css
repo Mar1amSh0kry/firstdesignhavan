@@ -488,6 +488,8 @@ hr {
 .contact .container form {
     display: flex;
     flex-direction: column;
+    font-family: "Inter", serif;
+
 }
 
 .contact .container form input,
@@ -504,6 +506,11 @@ hr {
 .contact .container form input:last-child {
     background-color: white;
     width: fit-content;
+    margin: auto;
+}
+
+.contact .container img {
+    width: 150px;
     margin: auto;
 }
 
@@ -525,6 +532,9 @@ hr {
 .instagram div {
     margin: 5px auto;
     color: var(--6B-color);
+    font-family: "Inter", serif;
+
+
 }
 
 /* End follow Instagram   */
@@ -570,16 +580,33 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: "Inter", serif;
+    text-transform: uppercase;
+
+}
+
+.footer .container .information .section-part .title div:first-child {
+    font-family: "Inter", serif;
+    font-style: normal;
+}
+
+.footer .container .information .section-part .first-title {
+    display: flex;
 }
 
 .footer .container .information .section-part .title {
     font-size: 20px;
     margin: 10px;
+    font-family: "Cormorant", serif;
+    text-transform: capitalize;
+    letter-spacing: -1px;
+    font-style: italic;
 }
 
 .footer .container .information .section-part .paragraph {
     margin-top: 30px;
     width: 260px;
+    text-transform: none;
 }
 
 .footer .container .information .section-part a {
@@ -600,6 +627,8 @@ hr {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    font-family: "Inter", serif;
+
 }
 
 @media(max-width:767px) {
