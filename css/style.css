@@ -62,6 +62,9 @@ html {
 
 button {
     width: fit-content;
+    border: none;
+    background-color: #FFF;
+    font-family: "Cormorant";
     margin: auto;
 }
 
@@ -121,6 +124,16 @@ button {
 
 .navbar .container .right-side {
     display: flex;
+}
+
+@media (max-width: 768px) {
+    .navbar .icons {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        left: 1%;
+        bottom: 50%;
+    }
 }
 
 /* End Navbar  */
@@ -209,16 +222,21 @@ button {
     justify-content: center;
     align-items: center;
     font-family: "Cormorant", serif;
-    font-size: 40px;
     text-transform: capitalize;
-
 }
 
-.explore div {
+.explore .content div:not(:last-child) {
+    font-size: 40px;
+}
+
+.explore .content>div {
     text-align: center;
     color: white;
-    padding: 20px;
-    width: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
 }
 
 .explore .container .content div:first-child {
@@ -275,31 +293,16 @@ button {
         top: 235px;
     }
 
-    .explore .container .content div:nth-child(3) {
-        white-space: normal;
-        font-size: 10px;
-        width: 330px;
-    }
-
-    .explore .content div {
+    .explore .content div:not(:last-child) {
         font-size: 30px;
-        width: 310px;
     }
 
+    @media(max-width:320px) {
 
-    .explore button {
-        margin: auto;
-
-    }
-
-}
-
-@media(max-width:320px) {
-
-    .explore .container .content div:nth-child(3) {
-        white-space: normal;
-        font-size: 10px;
-        width: 255px;
+        .explore .container .content div:nth-child(3) {
+            white-space: normal;
+            font-size: 10px;
+        }
     }
 }
 
