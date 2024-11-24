@@ -546,6 +546,14 @@ hr {
     margin: auto;
 }
 
+@media(max-width:767px) {
+
+    .contact .container .special-words p {
+        width: 250px;
+        font-size: 10px;
+    }
+}
+
 /* End contact */
 
 
@@ -589,8 +597,8 @@ hr {
     }
 }
 
-
 /* End Instagram   */
+
 
 
 /* Start Footer  */
@@ -669,11 +677,6 @@ hr {
         margin-bottom: 20px;
         padding: 5px;
     }
-
-    .contact .container .special-words p {
-        width: 340px;
-    }
-
 }
 
 /* End Footer  */
