@@ -235,6 +235,15 @@ button img {
     padding-top: 20px;
 }
 
+.explore .container .first {
+    display: flex;
+    justify-content: space-between;
+}
+
+.explore .container .first img:first-child {
+    padding-top: 25px;
+}
+
 .explore .content div {
     display: flex;
     flex-direction: column;
@@ -282,28 +291,39 @@ button img {
 
 .explore .container .content div:nth-child(5) {
     padding-bottom: 0;
+    color: #FFFFFF;
+    opacity: 60%;
 }
 
 
 .explore .container .content div:nth-child(6) {
     padding-top: 0;
+    color: #FFFFFF;
+    opacity: 60%;
 }
 
 .explore .container .content div:nth-last-child(2) {
     padding-top: 5px;
+    color: #FFFFFF;
+    opacity: 60%;
 }
 
 .explore .image {
     position: absolute;
     content: "";
     z-index: 0;
-    top: 165px;
+    top: 350px;
     left: 421px;
 }
 
 .explore button {
     margin: auto;
 
+}
+
+.explore .last {
+    display: flex;
+    justify-content: space-between;
 }
 
 @media(max-width:767px) {
