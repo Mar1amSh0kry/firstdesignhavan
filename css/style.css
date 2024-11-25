@@ -339,6 +339,10 @@ button img {
     .explore .image {
         display: none;
     }
+
+    .explore .bubbles {
+        display: none;
+    }
 }
 
 @media(max-width:320px) {
