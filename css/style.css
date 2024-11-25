@@ -68,6 +68,10 @@ button {
     margin: auto;
 }
 
+button img {
+    width: 15px;
+}
+
 .special-heading {
     font-size: 30px
 }
@@ -133,14 +137,17 @@ button {
         flex-direction: column;
         left: 1%;
         bottom: 50%;
+        z-index: 1;
     }
 }
 
 /* End Navbar  */
 
 /* Start Heading  */
-.heading {
-    margin: 30px;
+
+.heading .container {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .heading .container .section1 {
@@ -171,6 +178,8 @@ button {
 
 .heading .container .section1 button {
     margin: 10px auto;
+    font-family: "Cormorant", serif;
+
 }
 
 .heading .container .links {
@@ -197,12 +206,18 @@ button {
 
 .section2 button {
     margin: auto;
+    font-family: "Cormorant", serif;
+
 }
 
 @media((max-width:767px)) {
     .heading .section2 {
         flex-direction: column;
 
+    }
+
+    .heading .section2 .special-words {
+        padding: 50px 0;
     }
 }
 
@@ -214,6 +229,10 @@ button {
     width: 100%;
     height: 100%;
     position: relative;
+}
+
+.explore .content {
+    padding-top: 20px;
 }
 
 .explore .content div {
@@ -274,11 +293,11 @@ button {
     padding-top: 5px;
 }
 
-.explore img {
+.explore .image {
     position: absolute;
     content: "";
     z-index: 0;
-    top: 290px;
+    top: 165px;
     left: 421px;
 }
 
@@ -288,7 +307,7 @@ button {
 }
 
 @media(max-width:767px) {
-    .explore img {
+    .explore img:first-child {
         left: 45px;
         top: 235px;
     }
@@ -297,12 +316,16 @@ button {
         font-size: 30px;
     }
 
-    @media(max-width:320px) {
+    .explore .image {
+        display: none;
+    }
+}
 
-        .explore .container .content div:nth-child(3) {
-            white-space: normal;
-            font-size: 10px;
-        }
+@media(max-width:320px) {
+
+    .explore .container .content div:nth-child(3) {
+        white-space: normal;
+        font-size: 10px;
     }
 }
 
@@ -323,6 +346,10 @@ button {
 }
 
 @media(max-width:767px) {
+    .portfolio .section1 .special-words {
+        padding: 50px 0;
+    }
+
     .portfolio .special-words p {
         width: 170px;
     }
@@ -343,7 +370,7 @@ button {
     flex-direction: column;
 }
 
-.portfolio img {
+.portfolio div img {
     width: calc(100% - 10px);
 }
 
@@ -376,10 +403,22 @@ button {
 
 .portfolio button {
     margin: 10px auto;
+    font-family: "Cormorant";
+    display: block;
+}
+
+.portfolio button img {
+    width: 15px;
 }
 
 hr {
     color: #D2D0C3;
+}
+
+@media(max-width:767px) {
+    .portfolio .section2 .special-words {
+        padding: 50px 0;
+    }
 }
 
 .portfolio .clients .client {
@@ -477,6 +516,8 @@ hr {
 
 .blog-articles .container button {
     margin: auto;
+    font-family: "Cormorant", serif;
+
 }
 
 @media(max-width:767px) {
@@ -540,9 +581,10 @@ hr {
     margin: auto;
 }
 
-.container .btn {
-    width: 150px;
+.contact button {
     margin: auto;
+    font-family: "Cormorant", serif;
+
 }
 
 .contact .follow {
@@ -555,6 +597,10 @@ hr {
         white-space: normal;
         width: 250px;
         font-size: 10px;
+    }
+
+    .contact .container .special-words {
+        padding: 0;
     }
 }
 
@@ -614,7 +660,9 @@ hr {
 .footer .container .information {
     display: flex;
     justify-content: space-evenly;
-    padding: 15px;
+    padding: 0px;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .footer .container .information .section-part {
@@ -624,10 +672,6 @@ hr {
     font-family: "Inter", serif;
     text-transform: uppercase;
     margin-top: 50px;
-}
-
-.footer .btn {
-    width: 120px;
 }
 
 .footer .container .information .section-part .title div:first-child {
@@ -659,6 +703,12 @@ hr {
     color: #FFFFFF;
 }
 
+.footer button {
+    width: fit-content;
+    font-family: "Cormorant", serif;
+    padding: 0;
+    align-self: center;
+}
 
 .footer .container hr {
     color: #D2D0C3;
@@ -669,7 +719,6 @@ hr {
     justify-content: space-between;
     padding: 20px;
     font-family: "Inter", serif;
-
 }
 
 @media(max-width:767px) {
@@ -682,5 +731,6 @@ hr {
         padding: 5px;
     }
 }
+
 
 /* End Footer  */
